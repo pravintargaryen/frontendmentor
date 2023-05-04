@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: "HankenGrotesk";
+      src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+    }
+    body {font-family: 'HankenGrotesk';     margin-bottom: 300px;}
+    .main{
+      font-family: 'HankenGrotesk'; 
+      width:80%;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      margin-top: 300px;
+      margin-left: 300px;
+      margin-bottom: 10px;
+    }
+    .result {
+      background-color: #2c12f0;
+      max-width: 250px;
+      padding: 20px;
+      border-radius: 20px;
+      color: #fff;
+    }
+    .summary {
+      background-color: #fff;
+      width: 320px;
+      padding: 20px;
+      text-align: center;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: #8ad3eb 0px 5px 15px;
+    }
+    .summary p {
+      display: inline-block;
+    }
+    .left {
+      text-align: left;
+      width: 50%;
+    }
+    .right {
+      text-align: right;
+      width: 50%;
+    }
+    .circle {
+      background: rgb(116,9,121);
+background: linear-gradient(90deg, rgba(116,9,121,1) 0%, rgba(44,18,240,1) 0%, rgba(21,13,78,1) 100%);
+      font-size: 48px;
+      border-radius: 50%;
+      width: 150px;
+      margin: auto;
+      height: auto;
+      
+    }
+    #score {
+      padding-top: 30px;
+    }
+    span{
+      font-size: small;
+      color: #cacad9;
+      padding-bottom: 30px;
+      
+    }
+
+    #result_color {
+      color: #cacad9;
+    }
+
+    article {width:300px;}
+    #article1 {background-color: antiquewhite;border-radius: 5px; padding-left: 10px;}
+    #article2 {background-color: antiquewhite;border-radius: 5px; padding-left: 10px;}
+    #article3 {background-color: #b6fab1;border-radius: 5px;padding-left: 10px;}
+    #article4 {background-color: #cde7ff;border-radius: 5px;padding-left: 10px;}
+    .great {
+      display: flex;
+      flex-direction: column;
+      margin-top: -50px;
+    }
+    .great h1 {
+      margin-bottom: 5px;
+      
+    }  
+    .great p {
+      margin: auto;
+      color: #cacad9;
+      width: 80%;
+
+    }
+
+    #summary1 {
+      color:#f75f5f;
+    }
+
+    #summary2{
+      color:#ffe33f;
+    }
+
+    #summary3{
+      color:#27ab3d;
+    }
+
+    #summary4{
+      color:#2754ab;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+ button {
+  background-color: #150d4e; 
+  color: #fff; 
+  margin-top: 30px; 
+  margin-bottom: 30px; 
+  width: 320px; 
+  height: 50px; 
+  border: #150d4e;
+  border-radius: 25px;
+
+}   
+  </style>
+</head>
+<body>
+<div class="main">
+  <div class="result">
+  <p id="result_color">Your Result</p>
+  <div class="circle">
+  <p id="score">76 <br><span>of 100</span></p>
+  </div> 
+  <div class="great">
+  <h1>Great</h1>
+  <p>You scored higher than 65% of the people who have taken these tests.</p>
+  </div> 
+  </div>
+  <div class="summary">
+  <p style="margin-right: 250px;"><strong>Summary</strong></p>
+  <div class="summary_content">
+  <article id="article1"><p class="left" id="summary1"><img align="left" src="assets/images/icon-reaction.svg">&nbsp;Reaction</p><p class="right"><b>80</b> / 100</p></article>
+  <br>
+  <article id="article2" ><p class="left" id="summary2"><img align="left" src="assets/images/icon-memory.svg">&nbsp;Memory</p><p class="right"><b>92</b> / 100</p></article>
+  <br>
+  <article id="article3" ><p class="left" id="summary3"><img align="left" src="assets/images/icon-verbal.svg">&nbsp;Verbal</p><p class="right"><b>61</b> / 100</p></article>
+  <br>
+  <article id="article4" ><p class="left" id="summary4"><img align="left" src="assets/images/icon-visual.svg">&nbsp;Visual</p><p class="right"><b>72</b> / 100</p></article>
+
+  </div> 
+  <div class="button">
+  <button>Continue</button>   
+  </div>
+  </div>  
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Pravin</a>.
+  </div>
+
+</body>
+</html>
