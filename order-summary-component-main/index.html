@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-color: #d6e1ff;
+    }
+    .main {
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #fff;
+      border-radius: 15px;
+      text-align: center;
+      width:33.7%;
+      margin: auto;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .main img {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    .rest {
+      padding-left: 40px;
+      padding-right: 40px;
+      
+    }
+
+    .order p {
+      color: #818187;
+      padding: 7px;
+    }
+    .plan {
+      background-color: #edf3ff;
+      border-radius: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .plan img {
+      padding-right: 15px;
+    }
+    .plan p {
+      display: inline-block;
+      
+    } 
+    .left {
+      width:50%;
+      text-align: left;
+    }
+   
+    .right {
+      width:50%;
+      text-align: right;
+    }
+    .payment {
+      margin-top: 30px;
+      padding-bottom: 30px;
+    }
+    .payment button {
+      background-color: #1e1fcd;
+      border: #1e1fcd;
+      color: #fff;
+      height: 40px;
+      width: 360px;
+      border-radius: 10px;
+      box-shadow: #d2e2ff 0px 19px 38px, #d2e2ff 0px 15px 12px;
+      text-align: center;
+    }
+    .payment p {
+      color: #818187;
+      padding-top: 7px;
+    }
+    
+    .attribution { font-size: 11px; text-align: center;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="main">
+  <img src="./images/illustration-hero.svg" alt="Hero"/>
+  <div class="rest">
+  <div class="order">
+  <h1>Order Summary</h1>
+
+  <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!</p>
+  </div>
+  <div class="plan"> 
+  <p class="left"><img align="left" src="./images/icon-music.svg" alt="music player"  /><b>Annual Plan</b><br><span style="color:#818187">$59.99/year</span></p><p class="right"><a style="color: #1e1fcd" href="#">Change</a></p>
+  </div> 
+  <div class="payment">
+  <button><b>Proceed to Payment</b></button>
+  <p><b>Cancel Order</b></p>
+  </div>
+  </div>
+</div>    
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Pravin</a>.
+  </div>
+</body>
+</html>
