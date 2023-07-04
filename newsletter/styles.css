@@ -1,0 +1,78 @@
+@font-face {
+    font-family: myfont;
+    src: url('./assets/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: myfont1;
+    src: url('./assets/fonts/Roboto-Bold.ttf');
+}
+
+html, body {
+    background: #36374c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: myfont;
+}
+.container {
+    background: #fff;
+    display: flex;
+    border-radius: 20px;
+}
+
+
+.child1 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    
+}
+
+.child2 {
+    width: 400px;
+}
+
+.heading {
+    font-size: 60px;
+   
+}
+
+ul {
+    list-style: none;
+    padding: 0%;
+    line-height: 2;
+}
+
+.emailbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_text {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.subsrcibe_button {
+    font-family: myfont1;
+    background: #36384d;
+    color: #fff;
+    border: none;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.illustration {
+    padding: 20px 20px;
+    
+}
+
+.border {
+    border: 1px solid salmon;
+} 
+
+
