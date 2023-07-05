@@ -1,0 +1,86 @@
+body {
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background: #fff;
+    padding: 10px 30px;
+    padding-right: 150px;
+    border-radius: 15px;
+    border-bottom-right-radius: 150px 150px;
+    margin-top: 5%;
+}
+
+.top {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.day > p {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #878787;
+    font-size: x-small;
+    letter-spacing: 1px;
+    line-height: 0;
+    
+}
+
+.month > p {
+    text-transform: uppercase;
+    color: #878787;
+    font-weight: 600;
+    font-size: x-small;
+    letter-spacing: 1px;
+    line-height: 0;
+}
+
+.year > p {
+    text-transform: uppercase;
+    color: #878787;
+    font-weight: 600;
+    font-size: x-small;
+    letter-spacing: 1px;
+    line-height: 0;
+}
+
+.bottom {
+    font-weight:bolder;
+    font-style: italic;
+    font-size: 72px;
+}
+
+.bottom > p {
+    line-height: 0;
+}
+
+input {
+    padding: 15px;
+    width: 80px;
+    border-radius: 5px;
+    border: 1px solid #f0f0f0;
+}
+
+
+img {
+    position: absolute;
+    right: 480px;
+    top: 150px;
+    
+}
+
+span {
+    color: #7c4fed;
+}
+
+::placeholder {
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+
