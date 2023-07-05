@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (dayInput.value > 31 ) {
+            dayInput.style.border = "1px solid red"
             dayError.innerHTML = `<p style="color: red;font-style: italic;text-transform: initial;">Must be a valid day</p>`
             dayOutput.innerHTML = "<span>- -</span> days"
 
@@ -44,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (monthInput.value > 12 ) {
+            monthInput.style.border = "1px solid red"
             monthError.innerHTML = `<p style="color: red;font-style: italic;text-transform: initial;">Must be a valid month</p>`
             monthOutput.innerHTML = "<span>- -</span> months"
 
@@ -63,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (yearInput.value > 2023 ) {
+            yearInput.style.border = "1px solid red"
             yearError.innerHTML = `<p style="color: red;font-style: italic;text-transform: initial;">Must be in the past</p>`
             yearOutput.innerHTML = "<span>- -</span> years"
 
