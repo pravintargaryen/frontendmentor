@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title> News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      font-family: generalfont;
+    }
+    main {
+      padding: 100px;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      color: gray;
+    }
+
+
+    .top {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: 1fr 300px;
+      padding: 50px 0;
+
+
+    }
+    .hero {
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    .hero > img {
+      width: 100%;
+    }
+
+    .child1 {
+      display: flex;
+      justify-content: space-between;
+      max-height: 10vh;
+      
+    }
+
+    .newchild1 {
+      max-width: 50%;
+      
+
+    }
+    .newchild1 > h1 {
+      font-family:extraboldfont ;
+      font-size: 48px; 
+
+    }
+    .newchild2 {
+      max-width: 50%;
+      line-height: 30px;
+  
+    }
+
+    .newchild2 > p {
+      color: gray;
+    }
+
+    .new {
+      background: #00001a;
+      color: #fff;
+      padding: 15px;   
+   
+    }
+
+    .new > p {
+      color: gray;  
+   
+    }
+
+    button {
+      background: #f15d51;
+      color: #fff;
+      text-transform: uppercase;
+      border: none;
+      padding: 10px 20px;
+    }
+   
+
+    .new h1 {
+      color: #efbf72;
+      font-family: boldfont;
+      
+    }
+    .bottom {
+      display: flex;
+      gap: 100px;
+      padding: 100px 0;
+    }
+
+    .bottom_asset {
+      display: flex;
+      
+    }
+
+    .bottom_image {
+      height: 50%;
+    }
+
+    .bottom_asset_internal {
+      padding: 0 20px;
+    }
+
+    .bottom_asset_internal > h2 {
+    color: #c7c6cb;
+    }
+
+    .bottom_asset_internal > p {
+    color: gray;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+       
+    @font-face {
+      font-family: generalfont;
+      src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+    }
+
+    @font-face {
+      font-family: boldfont;
+      src: url(./assets/fonts/static/Inter-Bold.ttf);
+    }
+
+    @font-face {
+      font-family: extraboldfont;
+      src: url(.//assets/fonts/static/Inter-ExtraBold.ttf);
+    }
+
+    @font-face {
+      font-family: regularfont;
+      src: url(.//assets/fonts/static/Inter-Regular.ttf);
+    }
+
+    hr {
+      border: none;
+      border-bottom: 1px solid gray;
+
+    }
+  </style>
+</head>
+<body>
+  <main>
+  <nav class="nav">
+    <img src="./assets/images/logo.svg" alt="logo">
+    <ul>
+      <li>Home</li>
+      <li>New</li>
+      <li>Popular</li>
+      <li>Trending</li>
+      <li>Categories</li>
+    </ul>  
+  </nav>
+  <div class="top">  
+  <section class="hero">
+   <img  src="./assets/images/image-web-3-desktop.jpg" alt="web3">
+  <div class="child1">
+    <div class="newchild1"> 
+      <h1>The Bright Future of Web 3.0?</h1>
+    </div> 
+    <div class="newchild2"> 
+      <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+      But is it really fulfilling its promise?</p>
+
+    <button>Read more</button>
+    </div> 
+  </div>
+</section >  
+  <section class="new"> 
+  <h1>New </h1>
+
+  <h3>Hydrogen VS Electric Cars</h3>
+  <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+  <hr>
+  <h3>The Downsides of AI Artistry</h3>
+  <p>What are the possible adverse effects of on-demand AI image generation?</p>
+  <hr>
+  <h3>Is VC Funding Drying Up?</h3>
+  <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+</section> 
+</div> 
+  <section class="bottom"> 
+
+  <div class="bottom_asset">   
+    <div><img class="bottom_image" src="./assets/images/image-retro-pcs.jpg" alt="retro"></div>
+    <div class="bottom_asset_internal">
+       <h2>01</h2>
+        <h3>Reviving Retro PCs</h3>
+        <p>What happens when old PCs are given modern upgrades?</p>
+    </div>
+  </div>  
+  <div class="bottom_asset"> 
+    <div ><img class="bottom_image" src="./assets/images/image-top-laptops.jpg" alt="laptops"> </div>
+    <div class="bottom_asset_internal">
+        <h2>02</h2>
+        <h3>Top 10 Laptops of 2022</h3>
+        <p>Our best picks for various needs and budgets.</p>
+    </div>
+  </div>  
+  <div class="bottom_asset"> 
+  <div ><img class="bottom_image" src="./assets/images/image-gaming-growth.jpg" alt="gaming"></div>
+      <div class="bottom_asset_internal">
+        <h2>03</h2>
+        <h3>The Growth of Gaming</h3>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+</div>
+</div>  
+  </section> 
+</main>
+
+</body>
+</html>
