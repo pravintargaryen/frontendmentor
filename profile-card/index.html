@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+    body, html {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: cadetblue ;
+      font-family: 'Poppins', sans-serif;
+
+      
+    }
+
+    main {
+      margin-top: 35%;
+      width: 100%;
+      background-color:#fff ;
+      border-radius: 15px;
+    }
+
+    .cover-image{
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    .photo {
+      border-radius: 50%;
+      border: 5px solid #fff;
+      position: absolute;
+      top: -110px;
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-top: 50px;
+      line-height: 0.5px;
+      font-size: medium;
+    }
+
+
+    .name {
+      margin-top: 30px;
+    }
+
+    .number {
+      font-weight: 300;
+      color: gray;
+      
+    }
+
+    .london {
+      color: gray;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+
+    hr {
+      border-top: 1px gray;
+    }
+
+    section {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 10px;
+    }
+
+    section > div {
+      text-align: center;
+      line-height: 50%;
+    }
+
+    section > div > p {
+      color: gray;
+      font-weight: 300;
+      font-size: x-small;
+      letter-spacing: 1px;
+    }
+
+  </style>
+</head>
+<body>
+<main> 
+  <div class="cover">
+    <img src="./images/bg-pattern-card.svg" alt="cover" class="cover-image">
+  </div>
+  <div class="profile">
+  <img src="./images/image-victor.jpg" alt="victor" class="photo">
+  <h3 class="name">Victor Crest &nbsp;<span class="number">26</span></h3>
+  <p class="london">London</p>
+  </div>
+  <hr>
+  <section>
+  <div>
+    <h3>80K</h3>
+    <p>Followers</p>
+  </div>  
+  <div>
+  <h3>803K</h3>
+  <p>Likes</p>
+  </div>
+  <div>
+  <h3>1.4K</h3>
+  <p>Photos</p>
+  </div>
+  </section>
+</main>  
+</body>
+</html>
