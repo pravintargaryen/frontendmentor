@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+  background: #e0f1e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #263a39;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #b6bbbb;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#email {
+  width: 100%;
+}
+
+#message {
+  width: 100%;
+  padding: 30px;
+}
+
+#fname,
+#lname {
+  width: 100%;
+  margin-top: 5px;
+}
+
+#submit {
+  width: 100%;
+  background: #0c7d69;
+  color: #fff;
+  border: none;
+  font-family: inherit;
+  border-radius: 5px;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.enquiry,
+.request {
+  border: 1px solid #b6bbbb;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.container {
+  background: #fff;
+  width: 570px;
+  padding: 25px;
+  margin-top: 60px;
+  border-radius: 15px;
+}
+
+.name,
+.query {
+  display: flex;
+  gap: 10px;
+}
+
+.width {
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .name,
+  .query {
+    display: flex;
+    flex-direction: column;
+  }
+}

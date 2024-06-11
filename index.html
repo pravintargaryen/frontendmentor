@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    body {background: url(''); font-family: 'Outfit', sans-serif; font-weight: 700;}
-    .attribution { margin-top:15px; font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    .qr  {border-radius: 5%;}
-    .im {background-color : #fff; border-radius: 5%; padding-left:15px; padding-top:15px; padding-right:8px; padding-bottom:10px; margin-left: 500px; margin-top: 100px; width:210px;}
-    .sheet{background-color: #ADD8E6; padding-top: 30px; padding-bottom: 30px; margin-left: 50px; margin-right: 50px; margin-top: 100px;}
-    #secondary{font-weight: 400;}
-  </style>
-</head>
-<body>
-  <div class="sheet">
-  <div class="im">
-  <img class="qr" src="./images/image-qr-code.png" height="200px">
-  <p><b>Improve your front-end skills by building projects</b></p>
-  <p id="secondary">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Pravin M D</a>.
-  </div>
-</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <div class="container">
+        <h2>Contact Us</h2>
+      <form action="#" id="form" >
+      
+        <div class="name">
+          <div class="fname ">
+            <label for="fname">First Name *</label>
+            <input type="text" id="fname" />
+          </div>
+          <div class="lname ">
+            <label for="lname">Last Name *</label>
+            <input type="text" id="lname" />
+          </div>
+        </div>
+        <label for="email">Email Address *</label>
+        <input type="text" id="email" />
+        <label> Query Type *</label>
+        <div class="query ">
+          <div class="enquiry width">
+            <input type="radio" id="enquiry" />
+            <label for="enquiry">General Enquiry</label>
+          </div>
+          <div class="request width">
+            <input type="radio" id="request" />
+            <label for="request">Support Request</label>
+          </div>
+        </div>
+        <label for="message">Message *</label>
+        <input id="message"></input>
+        <p>
+        <input type="checkbox" id="consent" />
+        <label for="content">I consent to being contacted by the team *</label>
+        </p>
+        <input type="submit" id="submit" />
+      </form>
+    </div>
+  </body>
 </html>
