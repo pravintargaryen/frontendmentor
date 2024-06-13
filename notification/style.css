@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: #f9fafe;
+  color: #737781;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+img {
+  height: 32px;
+  width: 32px;
+}
+
+.container {
+  background: #fff;
+  width: 600px;
+  margin: 50px auto;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.read {
+  margin-left: auto;
+  color: #a1a2a6;
+  cursor: pointer;
+}
+
+.notification-title {
+  font-size: 24px;
+  color: #000;
+}
+
+.counter {
+  height: 20px;
+  width: 20px;
+  background: #0b317a;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 15px;
+  margin-left: 8px;
+}
+
+.notification {
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  font-size: 14px;
+  padding: 0px 15px;
+}
+
+.notification-image {
+  margin-left: auto;
+}
+
+.notification-post {
+  margin-bottom: 0;
+}
+
+.message {
+  border: 1px solid #eaedef;
+  padding: 10px;
+  color: #7e8387;
+}
+
+.span-name {
+  font-weight: bold;
+  color: #000;
+}
+
+.span-post {
+  font-weight: bold;
+  color: #7e8493;
+}
+
+.span-time {
+  color: #9fa6b0;
+  margin-top: 2px;
+}
+
+.red {
+  color: red;
+}
+
+.chess {
+  color: #0b317a;
+}
+
+.new {
+  background: #f6fafd;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.align {
+  margin-bottom: auto;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 400px;
+  }
+
+  .read {
+    margin-left: auto;
+    cursor: pointer;
+  }
+}
